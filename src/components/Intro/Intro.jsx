@@ -81,6 +81,7 @@ const Intro = () => {
           transition={transition}
           src={glassesimoji}
           alt=""
+          width="200px"
         />
 
         <motion.div
