@@ -6,6 +6,8 @@ import Sidebar from "../../img/sidebar.png";
 import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -24,7 +26,27 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          {/* <img src={Sidebar} alt="" /> */}
+          <figure className="portfolio-projet">
+            <img src={Sidebar} alt="" />
+            <figcaption>
+              <p>Javascript</p>
+              <h3>Kanap</h3>
+              <p>
+                Réalisation de la partie Javascript d'un site e-commerce dont le
+                back et l'API sont fournit.
+              </p>
+              <a
+                title="github"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/FataoDev"
+              >
+                Repo Github du projet{" "}
+                <FontAwesomeIcon icon={faSquareGithub} size="lg" />
+              </a>
+            </figcaption>
+          </figure>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Ecommerce} alt="" />
