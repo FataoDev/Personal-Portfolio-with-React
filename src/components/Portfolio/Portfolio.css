@@ -32,10 +32,11 @@
 .portfolio-slider .swiper-slide {
   width: 20rem;
 }
-/* .portfolio img {
+.portfolio img {
   width: 19rem;
   border-radius: 19px;
-} */
+  max-width: 22.5rem;
+}
 
 .portfolio-projet {
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
@@ -81,14 +82,15 @@
   border-bottom-right-radius: .3125rem;
 }
 
-.portfolio-projet > figcaption > p:nth-child(3) {
+.portfolio-projet > figcaption > p.titre {
+  color: red;
   margin-bottom: .625rem;
   line-height: 1.5rem;
 }
 
 .portfolio-projet > figcaption > a {
   text-decoration: none;
-  color: var(--hover);
+  color: var(--orange);
   font-size: .875rem;
   transition: 150ms;
 }

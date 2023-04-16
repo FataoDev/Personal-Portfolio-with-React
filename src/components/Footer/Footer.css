@@ -12,13 +12,26 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 4rem;
-  gap: 4rem;
+  margin-top: 5rem;
+  gap: 1rem;
   color: white;
+  margin-bottom: -5px;
 }
+
+.f-content>p{
+  color: var(--orange);
+}
+
 .f-icons {
   display: flex;
-  gap: 2rem;
+  margin-bottom: -15px;
+}
+.f-icons>a{
+  transform: scale(0.63);
+  width: 50px;
+}
+.f-icons>a:hover{
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 480px){
