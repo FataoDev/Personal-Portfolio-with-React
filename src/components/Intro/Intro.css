@@ -133,11 +133,19 @@
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
+  
+  .i-name > :nth-child(1),.i-name > :nth-child(2) {
+    font-size: 2rem;
+  }
+  .i-name > :nth-child(3) {
+    font-size: 1rem;
+  }
+  
   .Intro {
     flex-direction: column;
     gap: 7rem;
-    height: 64rem;
+    height: 77vh;
   }
 
   .i-right {
