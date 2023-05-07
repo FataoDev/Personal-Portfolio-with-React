@@ -29,13 +29,9 @@
 }
 .i-name > :nth-child(3) {
   font-weight: 100;
-  font-size: 14px;
+  font-size: 1.3rem;
   color: var(--gray);
-  margin-top: 10px;
-}
-.i-button {
-  width: 6rem;
-  height: 2rem;
+  margin-top: 1.4rem;
 }
 .i-icons {
   margin-top: 3rem;
@@ -48,10 +44,9 @@
 
 .i-icons > a{
   transform: scale(0.6);
-  margin-right:-10px;
-  padding:10px;
-  border-radius:10px;
-  box-shadow: 5px 4px 25px 5px #FCA61F;
+  padding:1.7rem;
+  border-radius:1.7rem;
+  box-shadow: 3px 2px 13px 3px #FCA61F;
 }
 .i-icons > a:hover{
   transform: scale(0.7);
@@ -104,6 +99,40 @@
   filter: blur(72px);
 }
 
+
+/* ==================== MEDIA QUERIES (medium screens) ============================== */
+
+@media screen and (max-width:1024px) {
+  .i-name > :nth-child(1),.i-name > :nth-child(2) {
+    font-size: 3.3rem;
+  }
+  .i-name > :nth-child(3) {
+    font-size: 1.7rem;
+  }
+
+  .i-icons > a{
+    gap: 0.7rem;
+    border-radius:1.7rem;
+  }
+  .i-icons a{
+    margin: 0;
+  }
+
+  .i-right{
+    display: none;
+  }
+  
+
+  
+
+  
+}
+
+
+
+
+
+
 @media screen and (max-width: 480px) {
   .Intro {
     flex-direction: column;
@@ -112,6 +141,7 @@
   }
 
   .i-right {
+    display: none;
     transform: scale(0.8);
     left: -3rem;
   }

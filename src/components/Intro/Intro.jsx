@@ -70,25 +70,25 @@ const Intro = () => {
       </div>
       {/* right image side */}
       <div className="i-right">
-        <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
+        <img className="photo" src={Vector1} alt="" />
+        <img className="photo" src={Vector2} alt="" />
         <img src="" alt="" />
         {/* <img src={boy} alt="" /> */}
         {/* animation */}
         <motion.img
-          initial={{ left: "-36%" }}
-          whileInView={{ left: "-24%" }}
+          initial={{ top: "3%", left: "-26%" }}
+          whileInView={{ top: "-5%", left: "-14%" }}
           transition={transition}
           src={glassesimoji}
           alt=""
-          width="200px"
+          width="150rem"
         />
 
         <motion.div
           initial={{ top: "-4%", left: "74%" }}
           whileInView={{ left: "68%" }}
           transition={transition}
-          className="floating-div"
+          className="floating-div-web"
         >
           <FloatinDiv img={crown} text1="Developpeur" text2="Web" />
         </motion.div>
@@ -98,13 +98,16 @@ const Intro = () => {
           initial={{ left: "9rem", top: "18rem" }}
           whileInView={{ left: "0rem" }}
           transition={transition}
-          className="floating-div"
+          className="floating-div-design"
         >
           {/* floatinDiv mein change hy dark mode ka */}
           <FloatinDiv img={thumbup} text1="Design" text2="Graphique" />
         </motion.div>
 
-        <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
+        <div
+          className="blur"
+          style={{ background: "rgb(238, 210, 255)" }}
+        ></div>
         <div
           className="blur"
           style={{
