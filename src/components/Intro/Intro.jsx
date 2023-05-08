@@ -76,7 +76,7 @@ const Intro = () => {
         {/* <img src={boy} alt="" /> */}
         {/* animation */}
         <motion.img
-          initial={{ top: "3%", left: "-26%" }}
+          initial={{ top: "-10%", left: "-26%" }}
           whileInView={{ top: "-5%", left: "-14%" }}
           transition={transition}
           src={glassesimoji}
