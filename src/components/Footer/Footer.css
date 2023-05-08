@@ -34,12 +34,46 @@
   transform: scale(1.1);
 }
 
+.fleche img{
+  /* background-color:white; */
+  border-radius:50%;
+}
+
+.fleche img:hover{
+background-color:white;
+
+}
 
 
-
-
-@media screen and (max-width: 480px){
+@media screen and (max-width:1024px){
   .f-content{
-    transform: scale(.5);
+    margin-left:3rem;
+    width:20rem;
+  }
+  .f-icons{
+    margin-left:-3rem;
+
+  }
+  span{
+    font-size:1rem;
+  }
+  .fleche{
+    margin-right:19rem;
+    transition: 5s ease;
+  }
+}
+
+
+
+@media screen and (max-width: 680px){
+  .f-content{
+    margin-left:0;
+  }
+  .fleche{
+    margin-right:25rem;
+  }
+  
+  .f-content{
+    transform: scale(.7);
   }
 }
