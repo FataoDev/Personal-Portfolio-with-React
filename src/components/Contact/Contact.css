@@ -42,7 +42,21 @@ textarea{
     left: 8rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:1024px){
+    .w-left .awesome{
+        width:12rem;
+        margin-right:5rem;
+        gap:2rem;
+    }
+    .w-left .awesome span{
+        font-size:1.5rem;
+    }
+    form{
+        width:8rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
     .contact-form{
         padding: 0;
         flex-direction: column;
