@@ -6,7 +6,8 @@
 } */
 .f-content {
   
-  top: 82%; 
+  top: 84%; 
+  left: 2rem;
   margin-left: -3.5rem; 
   background-color:orange;
   padding-top : 15px; 
@@ -16,9 +17,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  width: 104%;
   gap: 1rem;
   color: white;
+  border-radius: 3rem;
 }
 
 .f-content>p{
