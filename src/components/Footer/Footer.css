@@ -1,21 +1,24 @@
-.footer {
+/* .footer {
   display: flex;
   align-items: center;
-  margin: -0.5rem -3.5rem;
-  position: relative;
-  margin-top: -7rem;
-}
+  margin: 0 -3.5rem;
+  /*position: relative;
+} */
 .f-content {
+  
+  top: 82%; 
+  margin-left: -3.5rem; 
+  background-color:orange;
+  padding-top : 15px; 
   position: absolute;
+  padding-bottom : 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 5rem;
   gap: 1rem;
   color: white;
-  margin-bottom: -5px;
 }
 
 .f-content>p{
@@ -34,15 +37,8 @@
   transform: scale(1.1);
 }
 
-.fleche img{
-  /* background-color:white; */
-  border-radius:50%;
-}
 
-.fleche img:hover{
-background-color:white;
 
-}
 
 
 @media screen and (max-width:1024px){

@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import "./Footer.css";
-import Wave from "../../img/wave.png";
-import fleche from "../../img/fleche.png";
+// import Wave from "../../img/wave.png";
+// import fleche from "../../img/fleche.png";
 import Insta from "@iconscout/react-unicons/icons/uil-instagram";
 import Linkdin from "@iconscout/react-unicons/icons/uil-linkedin";
 import Mail from "@iconscout/react-unicons/icons/uil-envelope";
@@ -14,8 +14,8 @@ const Footer = () => {
   const currentYear = date.getFullYear();
 
   return (
-    <div className="footer">
-      <img src={Wave} alt="" style={{ width: "100%", height: "40vh" }} />
+    <footer className="footer">
+      {/* <img src={Wave} alt="" style={{ width: "100%", height: "40vh" }} /> */}
       <div className="f-content">
         <div className="f-icons">
           <a
@@ -62,7 +62,7 @@ const Footer = () => {
         <span>
           Copyright &copy; {currentYear} Fatao OUEDRAOGO - Burkina Faso
         </span>
-        <Link to="Navbar" className="fleche">
+        {/* <Link to="Navbar" className="fleche">
           <img
             src={fleche}
             alt=""
@@ -76,9 +76,9 @@ const Footer = () => {
               // borderRadius: "15px red",
             }}
           />
-        </Link>
+        </Link> */}
       </div>
-    </div>
+    </footer>
   );
 };
 

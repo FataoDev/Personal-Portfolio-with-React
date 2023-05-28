@@ -1,7 +1,7 @@
 import React from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 const navbar = () => {
   return (
     <header className="n-wrapper" id="Navbar">
@@ -15,24 +15,16 @@ const navbar = () => {
         <div className="n-list">
           <ul style={{ listStyleType: "none" }}>
             <li>
-              <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
-                Accueil
-              </Link>
+              <Link to="/">Accueil</Link>
             </li>
             <li>
-              <Link to="services" spy={true} smooth={true}>
-                Compétences
-              </Link>
+              <Link to="/competence">Compétences</Link>
             </li>
-            {/* <li>
-              <Link to="works" spy={true} smooth={true}>
-                Expériences
-              </Link>
-            </li> */}
             <li>
-              <Link to="portfolio" spy={true} smooth={true}>
-                Portfolio
-              </Link>
+              <Link to="/experience">Expériences</Link>
+            </li>
+            <li>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
             {/* <li>
               <Link to="testimonial" spy={true} smooth={true}>
@@ -41,7 +33,7 @@ const navbar = () => {
             </li> */}
           </ul>
         </div>
-        <Link to="contact" spy={true} smooth={true}>
+        <Link to="/contact">
           <button className="button n-button">Contact</button>
         </Link>
       </div>
