@@ -3,9 +3,10 @@ import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import Admin_dash from "../../img/admin-dash-1.png";
+import web_ecommerce from "../../img/web-ecommerce.png";
+import web_training from "../../img/web-training.png";
+import calc_javascript from "../../img/calc-javascript.png";
 import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -18,7 +19,7 @@ const Portfolio = () => {
 
       {/* slider */}
       <Swiper
-        spaceBetween={30}
+        spaceBetween={0}
         slidesPerView={3}
         grabCursor={true}
         className="portfolio-slider"
@@ -28,11 +29,12 @@ const Portfolio = () => {
           <figure className="portfolio-projet">
             <img src={Sidebar} alt="" />
             <figcaption>
-              <p className="titre">Javascript</p>
-              <h3>Kanap</h3>
+              <p className="titre">ReactJS</p>
+              <h3>Site web</h3>
               <p>
-                Réalisation de la partie Javascript d'un site e-commerce dont le
-                back et l'API sont fournit.
+                Réalisation de la partie front-end d'un site de la liste des
+                pays et population dont l'API est fournit par l'API
+                restcontries.
               </p>
               <a
                 title="github"
@@ -46,15 +48,17 @@ const Portfolio = () => {
           </figure>
         </SwiperSlide>
         <SwiperSlide>
-          {/* <img src={Ecommerce} alt="" /> */}
+          {/* <img src={Admin-dash} alt="" /> */}
           <figure className="portfolio-projet">
-            <img src={Ecommerce} alt="" />
+            <img src={Admin_dash} alt="" />
             <figcaption>
-              <p>Javascript</p>
-              <h3>Kanap</h3>
+              <p>ReactJS/NodeJS</p>
+              <h3>site web complet-interface admin</h3>
               <p>
-                Réalisation de la partie Javascript d'un site e-commerce dont le
-                back et l'API sont fournit.
+                Réalisation d'un site web avec interface admin, utilisateur,
+                utilisie une interface Connexion/Inscription à travers mon API
+                CRUD REST Express avec NodeJS avec possibilité de CRUD produits
+                et users avec photos
               </p>
               <a
                 title="github"
@@ -70,14 +74,11 @@ const Portfolio = () => {
         <SwiperSlide>
           {/* <img src={MusicApp} alt="" /> */}
           <figure className="portfolio-projet">
-            <img src={MusicApp} alt="" />
+            <img src={web_training} alt="" />
             <figcaption>
-              <p>Javascript</p>
+              <p>ReactJS</p>
               <h3>Kanap</h3>
-              <p>
-                Réalisation de la partie Javascript d'un site e-commerce dont le
-                back et l'API sont fournit.
-              </p>
+              <p>Réalisation d'un site web complet de training.</p>
               <a
                 title="github"
                 target="_blank"
@@ -92,13 +93,32 @@ const Portfolio = () => {
         <SwiperSlide>
           {/* <img src={HOC} alt="" /> */}
           <figure className="portfolio-projet">
-            <img src={HOC} alt="" />
+            <img src={web_ecommerce} alt="" />
             <figcaption>
               <p>Javascript</p>
-              <h3>Kanap</h3>
+              <h3>E-commerce</h3>
+              <p>Réalisation d'un site E-commerce avec HTML/CSS/JavaScript.</p>
+              <a
+                title="github"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/FataoDev"
+              >
+                Repo Github du projet{" "}
+              </a>
+            </figcaption>
+          </figure>
+        </SwiperSlide>
+        <SwiperSlide>
+          {/* <img src={HOC} alt="" /> */}
+          <figure className="portfolio-projet">
+            <img src={calc_javascript} alt="" />
+            <figcaption>
+              <p>Javascript</p>
+              <h3>Calculatrice</h3>
               <p>
-                Réalisation de la partie Javascript d'un site e-commerce dont le
-                back et l'API sont fournit.
+                Réalisation d'une calculatrice utilisant plusieurs fonctions
+                avec HTML/CSS/JavaScript.
               </p>
               <a
                 title="github"
